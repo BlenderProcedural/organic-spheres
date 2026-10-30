@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organic Spheres - 16 Procedural Organic Materials</title>
+  <meta name="description" content="16 fully procedural organic materials with real displacement for Cycles and EEVEE: wet flesh, brain coral, scales, crystals, glowing jellies, alien hides, moss and stone.">
+  <meta property="og:title" content="Organic Spheres - 16 Procedural Organic Materials">
+  <meta property="og:description" content="Fully procedural, displacement-driven organic materials. Asset Browser ready for Cycles and EEVEE.">
+  <meta property="og:image" content="assets/img/shots/featured.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="logo">Organic <span>Spheres</span></div>
+      <a class="btn store-link" href="#" target="_blank" rel="noopener" hidden>Get it on Superhive</a>
+    </header>
+
+    <section class="hero" style="padding-top: 8px">
+      <h1>16 procedural <em>organic</em> materials</h1>
+      <p>Wet flesh, brain coral, scales, crystals, glowing jellies, alien hides, moss and stone, built entirely from shader nodes with real displacement.</p>
+      <div class="cta">
+        <a class="btn store-link" href="#" target="_blank" rel="noopener" hidden>Get it on Superhive</a>
+        <a class="btn ghost" href="#browse">Browse the materials</a>
+      </div>
+      <div class="hero-img"><img src="assets/img/shots/featured.jpg" width="1600" height="800" alt="All 16 Organic Spheres materials rendered on spheres"></div>
+      <div class="stats">
+        <div><b>16</b><span>materials</span></div>
+        <div><b>0</b><span>image textures</span></div>
+        <div><b>6</b><span>artist controls each</span></div>
+        <div><b>4.5+</b><span>Blender, Cycles &amp; EEVEE</span></div>
+      </div>
+    </section>
+
+    <section id="browse">
+      <h2>Browse the library</h2>
+      <p class="lead">Every material, rendered in Cycles under the same light. Use the arrows, swipe, or filter by category.</p>
+      <div id="viewer" aria-label="Organic Spheres material browser"></div>
+    </section>
+
+    <section>
+      <h2>Built for real renders</h2>
+      <p class="lead">Each material is a single node group: real displacement, subsurface scattering, a wet coat layer and micro detail such as pores, grain and wrinkles.</p>
+      <div class="features">
+        <div><h3>No textures, no seams</h3><p>Pure 3D procedural patterns: no UVs needed, no tiling, no resolution limit.</p></div>
+        <div><h3>Real displacement</h3><p>True geometry, not just bump. Adaptive subdivision in Cycles, regular subdivision in EEVEE.</p></div>
+        <div><h3>Asset Browser ready</h3><p>Catalogs, rendered previews, descriptions and tags for every material. Drag, drop, render.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Simple controls</h2>
+      <p class="lead">Recolour, rescale and dial the relief without opening the node network. The Glow materials add a Glow strength control.</p>
+      <div class="figure"><img src="assets/img/shots/controls.jpg" width="1600" height="800" loading="lazy" alt="Golden Tumor material with different Hue, Saturation, Scale, Displacement and Detail values"></div>
+      <table class="ctl" style="margin-top: 14px">
+        <thead><tr><th>Input</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td>Scale</td><td>Pattern size (about 1 / radius for non-unit objects)</td></tr>
+          <tr><td>Displacement</td><td>Relief height multiplier; 0 gives a flat surface with bump detail only</td></tr>
+          <tr><td>Detail</td><td>Micro-bump strength: pores, grain, wrinkles</td></tr>
+          <tr><td>Hue / Saturation / Brightness</td><td>Colour grading; Hue 0.5 keeps the original colours</td></tr>
+          <tr><td>Glow</td><td>Self-illumination (Glow materials only)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Works on any mesh</h2>
+      <p class="lead">The materials were designed on spheres, and they work on characters, rocks, props and abstract shapes too.</p>
+      <div class="figure"><img src="assets/img/shots/any-mesh.jpg" width="1600" height="800" loading="lazy" alt="Organic Spheres materials on Suzanne, a torus, a beveled cube and a capsule"></div>
+    </section>
+
+    <section>
+      <h2>Up close</h2>
+      <div class="pair">
+        <div class="figure"><img src="assets/img/shots/closeup-a.jpg" width="1600" height="800" loading="lazy" alt="Close-up of Rose Thorn and Crimson Crystals"></div>
+        <div class="figure"><img src="assets/img/shots/closeup-b.jpg" width="1600" height="800" loading="lazy" alt="Close-up of Golden Tumor and Peach Jelly"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get started in a minute</h2>
+      <ol class="steps">
+        <li><b>Add the library</b><p>Unzip, then go to <kbd>Edit › Preferences › File Paths › Asset Libraries</kbd>, click <kbd>+</kbd> and select the <code>Organic Spheres Library</code> folder.</p></li>
+        <li><b>Drag a material</b><p>Open an Asset Browser, pick the library, and drag a material onto your object. Or drag in <code>OS Ready Sphere</code> from <em>Utilities</em> to get a sphere that is already set up.</p></li>
+        <li><b>Subdivide</b><p>Add a Subdivision Surface modifier. For EEVEE, use render levels 4–6. For Cycles, enable Adaptive Subdivision (in Blender 4.x, set Feature Set to Experimental first).</p></li>
+        <li><b>Lock the colours (optional)</b><p>Go to <kbd>Object Data › Shape Keys</kbd> and tick <code>Add Rest Position</code>. This keeps the colours fixed to the displaced relief.</p></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <details><summary>Which Blender versions are supported?</summary><p>Blender 4.5 LTS and newer. The materials are tested in 4.5 and 5.2 with both Cycles and EEVEE.</p></details>
+      <details><summary>Do I need an add-on?</summary><p>No. The download is plain .blend files plus a catalog file.</p></details>
+      <details><summary>The surface looks smooth or blurry.</summary><p>Add a Subdivision Surface modifier, then raise its render levels in EEVEE or enable Adaptive Subdivision in Cycles.</p></details>
+      <details><summary>The pattern is too big or too small.</summary><p>Change the material's Scale input, or apply your object's scale with <kbd>Ctrl A › Scale</kbd>.</p></details>
+      <details><summary>Can I use these in commercial work?</summary><p>Yes, in your renders, animations, games and other projects. Reselling or redistributing the materials themselves isn't allowed.</p></details>
+    </section>
+
+    <footer>
+      <p><a class="btn store-link" href="#" target="_blank" rel="noopener" hidden>Get Organic Spheres on Superhive</a></p>
+      <p>Organic Spheres · © BlenderProcedural · All renders made in Blender with Cycles.</p>
+    </footer>
+  </div>
+
+  <script src="assets/materials.js"></script>
+  <script src="assets/viewer.js"></script>
+  <script>
+    // Set this to the Superhive product URL once the product is live; the buttons stay hidden until then.
+    const STORE_URL = "";
+    if (STORE_URL) {
+      document.querySelectorAll(".store-link").forEach((a) => { a.href = STORE_URL; a.hidden = false; });
+    }
+    OSViewer.mount(document.getElementById("viewer"));
+  </script>
+</body>
+</html>

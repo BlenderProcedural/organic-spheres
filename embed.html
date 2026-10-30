@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organic Spheres - Material Browser</title>
+  <meta name="description" content="Browse the 16 procedural organic materials of Organic Spheres for Blender.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="embed">
+  <main id="viewer" aria-label="Organic Spheres material browser"></main>
+  <script src="assets/materials.js"></script>
+  <script src="assets/viewer.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const brand = document.createElement("div");
+    brand.className = "brand";
+    brand.innerHTML = '<span>Organic Spheres · 16 procedural materials</span>' +
+      '<a href="index.html" target="_blank" rel="noopener">Full showcase ↗</a>';
+    OSViewer.mount(document.getElementById("viewer"), { start: params.get("m"), brand });
+  </script>
+</body>
+</html>
